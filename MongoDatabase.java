@@ -1,23 +1,13 @@
-public class MongoDatabase implements IDatabase {
+public class MongoDatabase extends AbstractDatabase {
 
    @Override
-   public void add() {
-      System.out.println("add the MongoDb database");
+   public void update(){
+      System.out.println("Mongo updated...");
    }
 
    @Override
-   public void delete() {
-      System.out.println("delete the MongoDb database");
+   public void get(){
+      System.out.println("Mongo got data...");
    }
 
-   @Override
-   public void get() {
-      System.out.println("get the MongoDb database");
-   }
-
-   @Override
-   public void update() {
-      System.out.println("update the MongoDb database");
-   }
-   
 }
